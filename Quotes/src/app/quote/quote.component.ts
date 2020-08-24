@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-quote',
-  templateUrl: './quote.component.html',
+  template: `
+        <h1>
+           add quote
+        </h1>
+  `,
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
