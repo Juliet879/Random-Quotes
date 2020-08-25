@@ -8,8 +8,9 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    {id:1,name:'Don’t you know your imperfections is a blessing'},
-    {id:2,name:'Reality is wrong, dreams are for real'},
+    {id:1,name:'Determine your priorities and focus on them',author:'Eileen McDargh'},
+    {id:2,name:'Reality is wrong, dreams are for real',author:'Tupac'},
+    {id:3,name:'What consumes your mind controls your life',author:'Juliet'},
 
   ];
 
