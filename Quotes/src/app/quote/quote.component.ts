@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-quote',
-  template: `
-        <h1>
-           add quote
-        </h1>
-  `,
+  templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+
+  public quote = "Whatever you do ,do it well-Wait Disney";
 
   constructor() { }
 
