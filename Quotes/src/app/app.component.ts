@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Quote } from './quote';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quote:Quote[]=[
-    {id:1}
-  ]
+  quotes:Quote[]=[
+    {id:1,name:'Don’t you know your imperfections is a blessing'},
+    {id:2,name:'Reality is wrong, dreams are for real'},
+
+  ];
 }
