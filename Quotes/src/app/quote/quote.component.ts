@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteComponent implements OnInit {
 
-  public quote = "Whatever you do ,do it well-Wait Disney";
 
   constructor() { }
 

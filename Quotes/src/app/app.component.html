@@ -1,5 +1,8 @@
 <div style="text-align: center;">
   <h1> Welcome to Random Quotes</h1>
-  <p>add {{ quote  }}</p>
+  <ul>
+    <li *ngFor='let quote of quote'>
+        {{ quote }}
+    </li>
+  </ul>
 </div>
-<app-quote></app-quote>
