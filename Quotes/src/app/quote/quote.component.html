@@ -1,10 +1,10 @@
-<div style="text-align: center;">
-    <h1> Welcome to Random Quotes</h1>
+<div>
+    <h1>Welcome to Random quotes</h1>
     <hr>
     <ul>
-        <div *ngFor='let quote of quotes;let i= index'>
-            <li> {{ quote.name }}</li>
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
-        </div>
+        <li *ngFor='let quote of quotes'>
+            {{quote.name}}
+            <app-quote-detail [goal]='goal'></app-quote-detail>
+        </li>
     </ul>
+</div>
