@@ -6,12 +6,28 @@
             <div *ngFor='let quote of quotes;let i=index'>
                 <div>
                     <h4 id={{i}}>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
-                    
+
                     <div *ngIf='goal.showDescription'>
                         <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
                     </div>
                 </div>
 
             </div>
+            <div class="col-mod-6">
+                <app-quote-form></app-quote-form>
+            </div>
         </div>
+        <div class="myQuote " *ngFor="let quote of quotes; let i=index">
+            <p class="h3 h3-responsive font-bold wow fadeInLeft" data-wow-delay="1s" appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
+              {{quote.quote}}
+
+            </p>
+             <p class="h3 h3-responsive font-bold wow fadeInLeft" data-wow-delay="1s" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}
+             </p>
+
+            <app-details [quote]="quote"></app-details>
+            <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
+            <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
+            <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+          </div>
     </div>

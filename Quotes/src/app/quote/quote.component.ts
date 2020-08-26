@@ -13,15 +13,33 @@ export class QuoteComponent implements OnInit {
 
   ];
    
-   deleteQuote(isComplete){
-     if (isComplete){
-     
-     }
-   }
-
-  constructor() { }
-
-  ngOnInit(): void {
+  addQuote(chosenQuote) {
+    this.quotes.push(chosenQuote)
   }
+
+  
+  delQuote(i) {
+    this.quotes.splice(i, 1)
+  }
+  preNum:number
+  lastNum:number
+  counter:number
+
+  highestUpvote(){
+    this.preNum = 0
+    this.lastNum = 0
+
+    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
+      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    }
+    return  this.preNum
+  }
+
+
+
+constructor() { }
+
+ngOnInit() {
+}
 
 }
