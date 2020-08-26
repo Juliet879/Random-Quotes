@@ -9,7 +9,6 @@ Random Quotes, August 24th 2020
 
 | Input                        | Ouput                                                                                            |
 |--------------------------    |----------------------------------------------------------------------------------------------    |
-| User clicks Post  Quote     | Quote form displays with input fields for Author, Publisher                  |
 | User Clicks Delete           | The quote is purged from view             |
 | User clicks Upvote        |   upvote is incremented value by   1 on each click      |
 | User clicks Downvote     | downvote is decremented value by 1 on each click     |
