@@ -1,5 +1,5 @@
 # Random-Quotes# Quotes
-####Random Quotes, August 24th 2020
+#Random Quotes, August 24th 2020
 #### By **Juliet Gisemba**
 
 ## Description
@@ -16,7 +16,7 @@
 
 ## Setup/Installation requirements
 
-- Clone  or download and unzip the repository from github, [https://github.com/Juliet879/Random-Quotes-/](https://github.com/Juliet879/Random-Quotes-.git).
+- Clone  or download and unzip the repository from github, [https://github.com/Juliet879/Random-Quotes-/](https://github.com/Juliet879/Random-Quotes).
 - If you have git Use this command `git clone *` to clone the project.
 - Run ng serve from your terminal
 
