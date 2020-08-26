@@ -3,8 +3,8 @@
     <hr>
     <ul>
         <li  *ngFor='let quote of quotes' >
-            <li appStrikethrough>{{quote.name}} due on {{quote.completeDate}}</li>
-            <app-quote-detail [quote]='quote'></app-quote-detail>
+            {{quote.name}} due on {{quote.completeDate|date|uppercase}}
         </li>
+        <app-quote-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
     </ul>
 </div>

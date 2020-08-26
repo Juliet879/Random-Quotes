@@ -12,6 +12,12 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'Reality is wrong, dreams are for real','Tupac',new Date(2018,7,12))
 
   ];
+   
+   deleteQuote(isComplete){
+     if (isComplete){
+     
+     }
+   }
 
   constructor() { }
 
