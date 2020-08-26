@@ -1,5 +1,5 @@
-# Random-Quotes# Quotes
-#Random Quotes, August 24th 2020
+# Random-Quotes Quotes
+Random Quotes, August 24th 2020
 #### By **Juliet Gisemba**
 
 ## Description
