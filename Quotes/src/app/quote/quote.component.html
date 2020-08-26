@@ -2,9 +2,9 @@
     <h1>Welcome to Random quotes</h1>
     <hr>
     <ul>
-        <li *ngFor='let quote of quotes'>
-            {{quote.name}}
-            <app-quote-detail [goal]='goal'></app-quote-detail>
+        <li  *ngFor='let quote of quotes' >
+            <li appStrikethrough>{{quote.name}} due on {{quote.completeDate}}</li>
+            <app-quote-detail [quote]='quote'></app-quote-detail>
         </li>
     </ul>
 </div>
