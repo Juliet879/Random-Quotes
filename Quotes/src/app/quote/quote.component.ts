@@ -18,9 +18,6 @@ export class QuoteComponent implements OnInit {
   }
 
   
-  delQuote(i) {
-    this.quotes.splice(i, 1)
-  }
   preNum:number
   lastNum:number
   counter:number
